@@ -860,10 +860,10 @@ let emojis = {
   ":white_medium_square:":"◻️"
 }
 
-let input = document.querySelector("#input");
-let output_field = document.querySelector("#output-field");
-let output = document.querySelector("#output");
-let copy = document.querySelector("#copy");
+let input = document.getElementById("input");
+let output_field = document.getElementById("output-field");
+let output = document.getElementById("output");
+let copy = document.getElementById("copy");
 
 copy.addEventListener("click", function () {
   output.select();
