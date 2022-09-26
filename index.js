@@ -15,11 +15,11 @@ copy.addEventListener("click", function () {
   }, 2500);
 });
 
-function emojify() {
-  output.value = autoReplace(input.value, emojis);
-}
-
 function autoReplace(text, correction) {
   const reg = new RegExp(Object.keys(emojis).join("|"), "g");
   return text.replace(reg, (matched) => emojis[matched]);
+}
+
+function emojify() {
+  output.value = autoReplace(input.value, emojis);
 }
